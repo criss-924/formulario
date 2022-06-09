@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+<link rel="stylesheet" href="styles.css">
+<title>Encuesta</title>
+</head>
+  <body>
+  <h1 id="title">Encuesta para conocer la frecuencia de complicaciones tardías post-covid</h1>
+  <p id="description">Gracias por contribuir a los datos y tomarse el tiempo de contestar las siguientes preguntas</p>
+  <form id="survey-form">
+    <label id="name-label"> Nombre<input id="name" type="text" required placeholder="Tu nombre aquí"></label>
+    <label id="email-label"> Correo electronico<input id="email" type="email" required placeholder="Tu email aquí"></label>
+    <label id="number-label"> Años<input min="0" max="120" id="number" type="number" placeholder="Tu edad aquí" required></label>
+    <label><input type="radio" name="account-type" class="inline" value="1"/> Femenino</label>
+    <label><input type="radio" name="account-type" class="inline" value="2"/> Masculino</label>
+    <label>Gravedad de tu cuadro de COVID-19</label><select id="dropdown">
+    <option>Seleccionar</option>
+    <option>Asintomático</option>
+    <option>Leve</option>
+    <option>Moderado</option>
+    <option>Severo (requirió oxigenación u hospitalización)</option>
+    </select>
+    <label>Presentaste COVID-19 positivo más de una vez</label>
+    <label><input type="checkbox" name="cursos" class="inline" value="1"/> Sí</label>
+    <label><input type="checkbox" name="cursos" class="inline" value="2"/> No</label>
+    <label id="number-label"> Tiempo del último cuadro de COVID-19 positivo a la fecha en días<input id="number" type"number" required></label>
+    <label>Describe los síntomas/complicaciones que has presentado posterior a tu cuadro de COVID-19
+    <textarea name="bio" rows="3" cols="30" placeholder="I like coding on the beach..."></textarea>
+			  </label>
+    <input type="submit" id="submit" value="Enviar" />
+  </form>
+  </body>
+</html>
